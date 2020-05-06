@@ -1,6 +1,6 @@
 lista=[]                                    #ures lista
-szam=int(input("szam: "))
-for i in (str(szam)):         
+szam=int(input("szam: "))                   #bekerjuk a szamot
+for i in (str(szam)):                       #majd string-re alakitas utan
     lista.append(szam%10)                   #megjelenitjuk a listaban a szam 10-el valo maradekos osztasat (pld. 993; 3 -> lista)
     szam=szam//10                           #a szamrol le vagjuk az utolso egesz reszt (pld. 993; szam=99)
 lista=lista[::-1]                           #vegul a listat megforditva megkapjuk a szamokat kulon-kulon (pld. "9","9","3")
